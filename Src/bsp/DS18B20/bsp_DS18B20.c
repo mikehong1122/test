@@ -79,6 +79,7 @@ static void DS18B20_config ( void )
       DS18B20_WriteByte(0X4E);	
       
       DS18B20_WriteByte(tmp[1]);  
+      DS18B20_WriteByte(tmp[2]); 
       
 
       break;

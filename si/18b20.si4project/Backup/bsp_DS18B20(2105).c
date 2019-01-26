@@ -71,7 +71,6 @@ static void DS18B20_config ( void )
       
       for(uint8_t i = 0; i < 9; i++)
         tmp[i] = DS18B20_ReadByte();	
-			
       HAL_Delay(200);
 
       DS18B20_Init();
@@ -81,7 +80,7 @@ static void DS18B20_config ( void )
       
       DS18B20_WriteByte(tmp[1]);  
       DS18B20_WriteByte(tmp[2]); 
-          
+      
 
       break;
     }
